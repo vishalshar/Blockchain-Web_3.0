@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Large Colored Title Article
+% LaTeX Template
+% Version 1.1 (25/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[DIV=calc, paper=a4, fontsize=11pt, twocolumn]{scrartcl}	 % A4 paper and 11pt font size
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[svgnames]{xcolor} % Enabling colors by their 'svgnames'
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{fix-cm}	 % Custom font sizes - used for the initial letter in the document
+
+\usepackage{sectsty} % Enables custom section titles
+\allsectionsfont{\usefont{OT1}{phv}{b}{n}} % Change the font of all section commands
+
+\usepackage{fancyhdr} % Needed to define custom headers/footers
+\pagestyle{fancy} % Enables the custom headers/footers
+\usepackage{lastpage} % Used to determine the number of pages in the document (for "Page X of Total")
+
+% Headers - all currently empty
+\lhead{}
+\chead{}
+\rhead{}
+
+% Footers
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize Page \thepage\ of \pageref{LastPage}} % "Page 1 of 2"
+
+\renewcommand{\headrulewidth}{0.0pt} % No header rule
+\renewcommand{\footrulewidth}{0.4pt} % Thin footer rule
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{blindtext}
+\usepackage{comment}
+\usepackage{lettrine} % Package to accentuate the first letter of the text
+\newcommand{\initial}[1]{ % Defines the command and style for the first letter
+\usepackage{titling}
+
+\lettrine[lines=3,lhang=0.3,nindent=0em]{
+\usepackage{titling}
+\color{DarkGoldenrod}
+{\textsf{#1}}}{}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\usepackage{titling} % Allows custom title configuration
+\newcommand{\HorRule}{\color{DarkGoldenrod} \rule{\linewidth}{1pt}} % Defines the gold horizontal rule around the title
+
+%\vspace{-10pt}
+\pretitle{\vspace{-25pt} \begin{flushleft} \HorRule \fontsize{28}{28} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont} % Horizontal rule before the title
+
+\setlength{\droptitle}{-5em} 
+\title{Web 3.0: Blockchain in next 20 years} % Your article title
+\posttitle{\par\end{flushleft}\vskip 0.5em} % Whitespace under the title
+\preauthor{\vspace{-20pt}\begin{flushleft}\large \lineskip 0.5em \usefont{OT1}{phv}{b}{sl} \color{DarkRed}} % Author font configuration
+
+\author{Vishal Sharma, } % Your name
+
+\postauthor{\footnotesize \usefont{OT1}{phv}{m}{n} \color{Black} % Configuration for the institution name
+Utah State University \\
+Email: vishal.sharma@usu.edu \\
+Address: 636 E 500 N, Apt no 3C, Logan, Utah, 84321 \\
+Phone: 435-764-5663 % Your institution
+\vspace{-16pt}
+
+\par\end{flushleft}\HorRule\vspace{-38pt}
+} % Horizontal rule after the title
+\date{} % Add a date here if you would like one to appear underneath the title block
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle % Print the title
+\thispagestyle{fancy} % Enabling the custom headers/footers for the first page 
+
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{comment}
+
+
+% The first character should be within \initial{}
+\initial{H}\textbf{ere is some sample text to show the initial in the introductory paragraph of this template article. The color and lineheight of the initial can be modified in the preamble of this document.}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Section 1}
+
+\lipsum[1-3] % Dummy text
+
+\begin{align}
+A = 
+\begin{bmatrix}
+A_{11} & A_{21} \\
+A_{21} & A_{22}
+\end{bmatrix}
+\end{align}
+
+\lipsum[4] % Dummy text
+\end{comment}
+
+
+  In the next decade, we will be experiencing a technology revolution like we have never seen before. Blockchain technology can help solve several problems that we are currently facing in our software applications, banking system, Internet, etc. This is about TRUST – how much can we trust the information available on the internet, and the publicly available documents and articles, etc? Digital records or documents often get modified for personal benefits, i.e., car record, real state records, health records, legal documents. We can\textquotesingle t seem to trust any source of information. There are articles on the Internet that evaluates the benefits and harmful effect of a product, but there is no way to validate the source of information/content. When buying a product on Amazon, buyers often look at the product reviews for decision making. However, there are several crowd sourcing websites where seller can crowdsource reviews for 50 cents. What’s the point of having reviews when the reviews are unreliable? Same applies to the transparency of agreements/documents of the real estate, identity verification, medical records, marketing, legal, law enforcement, banking finance, insurance etc. Consumers often get tricked by the hidden rules and regulations of the companies in those fields, but it won’t be possible with the imminent blockchain technology. All documents created will become immutable. If changes are made, the changes will be recorded with a digital mark and with information of who, what and when it was changed. In this digital era, the way we regulate things needs change.
+  
+Blockchain is a distributed ledger, where information is stored and processed across several computers. The absence of centralized information makes it harder for hackers to hack or corrupt the information. Blockchain technology can be applied to industry in every sector. It is also commonly known as Web 3.0. One can think of Blockchain as the combination of several existing technologies. There are three major technologies being used; Private Key (unique id) Cryptography, Distributed ledger, and Network/Transaction verification. Private key is a unique id for every individual and is used for peer-to-peer transactions; Distributed ledger holds the history of all transactions from all over the world. The transactions are distributed across several servers around the world. Every transaction occurring needs verification, which is done by the miners (giant GPU clusters). The miners will receive rewards by sharing computing power. After every successful transaction, it is written to the ledger by adding a new `block' of information. The blocks are linked together as a `chain', hence, called `block-chain'. Having several copies of ledger distributed across servers makes it a fault tolerant system.
+
+There are numerous application for blockchain. Currently, we are approaching an era of Artificial Intelligence where we are bound with the limitation of computation. Blockchain can play a major role in overcoming such limitations. The verification network (miners) of blockchain is an enormous computing power. Combining all the miners together creates the largest computing power in the world. This power can be used to overcome the computing limitation of the current AI and an AI could live off this giant computing network. There are projects currently working on similar ideas (SingularityNet), if this becomes successful, we will have a real time AI which has access to the data from ledger and can be used for any kind of forecasting and prediction. It may sound dangerous, however, by implementing appropriate regulations, it may not be as threatening as it may seems. This is just an example of one application. There are several ways to apply blockchain technology, viz., verification of school records (degree, scores) for better and transparent merit based admissions/scholarships; medical records verification for better health treatments; immigration records verification to avoid forgery; banking systems to empower fast and reliable global transactions; automotive industry for tracking vehicle full history, digital content to avoid copyright issues and provide better incentives for content creators; insurance industry for better claims adjudication and to reduce disputes with transparency; credit history for more accuracy, transparency, and accessibility. The era of blockchain is inevitable, it is just matter of time until we realize the power of blockchain technology by understanding how it can help solve existing problems.
+
+
+
+\end{document}
